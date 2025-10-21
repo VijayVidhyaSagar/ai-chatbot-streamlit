@@ -9,7 +9,7 @@ N8N_WEBHOOK_URL1 = "YOUR_N8N_WEBHOOK_URL_HERE" # e.g., "https://your.n8n.cloud/w
 
 # --- Streamlit UI ---
 st.set_page_config(page_title="Vijay's AI Chatbot", page_icon="🤖")
-st.title("🤖Vijay's n8n Powered AI Chatbot")
+st.title("🤖Vijay's n8n Powered AI Chatbot :robot:")
 st.write("Enter your message below and let the AI respond!")
 
 # Initialize chat history in Streamlit session state
