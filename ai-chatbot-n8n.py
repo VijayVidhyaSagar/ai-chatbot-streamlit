@@ -5,7 +5,11 @@ import json
 # --- Configuration ---
 # IMPORTANT: Replace this with your actual n8n Webhook URL.
 # You can find this in your Webhook node in n8n after saving and activating the workflow.
-N8N_WEBHOOK_URL1 = "YOUR_N8N_WEBHOOK_URL_HERE" # e.g., "https://your.n8n.cloud/webhook/..."
+try:
+    N8N_WEBHOOK_URL = st.secrets.n8n_webhook_url
+except (AttributeError, KeyError):
+    st.error("Webhook URL not found in st.secrets. Please check your .streamlit/secrets.toml file.")
+    st.stop()
 
 # --- Streamlit UI ---
 st.set_page_config(page_title="Vijay's AI Chatbot", page_icon="🤖")
