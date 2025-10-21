@@ -5,11 +5,11 @@ import json
 # --- Configuration ---
 # IMPORTANT: Replace this with your actual n8n Webhook URL.
 # You can find this in your Webhook node in n8n after saving and activating the workflow.
-N8N_WEBHOOK_URL = "YOUR_N8N_WEBHOOK_URL_HERE" # e.g., "https://your.n8n.cloud/webhook/..."
+N8N_WEBHOOK_URL1 = "YOUR_N8N_WEBHOOK_URL_HERE" # e.g., "https://your.n8n.cloud/webhook/..."
 
 # --- Streamlit UI ---
 st.set_page_config(page_title="Vijay's AI Chatbot", page_icon="🤖")
-st.title("🤖 n8n Powered AI Chatbot")
+st.title("🤖Vijay's n8n Powered AI Chatbot")
 st.write("Enter your message below and let the AI respond!")
 
 # Initialize chat history in Streamlit session state
