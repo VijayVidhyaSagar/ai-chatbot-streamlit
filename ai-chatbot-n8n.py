@@ -54,9 +54,9 @@ if prompt := st.chat_input("What's on your mind?"):
                 # Adjust 'text' if your 'Respond to Webhook' node uses a different key.
                 n8n_response_data = response.json()
                 if isinstance(n8n_response_data, list) and n8n_response_data:
-                    ai_response = n8n_response_data[0].get("text")
+                    ai_response = n8n_response_data[0].get("output")
                 elif isinstance(n8n_response_data, dict):
-                     ai_response = n8n_response_data.get("text")
+                     ai_response = n8n_response_data.get("output")
                 else:
                     ai_response = "Error: Unexpected response format from n8n."
                     st.error(f"Unexpected response from n8n: {n8n_response_data}")
